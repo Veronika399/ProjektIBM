@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrviFragment"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="607dp"
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:id="@+id/naslov"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/opis"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/napomena"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="@string/napomena"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/naslov"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            />
+
+
+        <EditText
+            android:id="@+id/Edit_visina"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/napomena"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/visina"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/Edit_tezina"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/Edit_visina"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/tezina"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/rdbtn"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/Edit_tezina"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/izracunaj"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/ITM_BROJ"
+            android:layout_width="360dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/rdbtn"
+            android:hint="@string/broj_itm"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/plava_poz"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tvITM"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ITM_BROJ"
+            android:layout_marginTop="0dp"
+            android:layout_centerInParent="true"
+            android:hint="@string/indeks"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_blue"
+            android:textSize="18sp"
+            android:background="@color/plava_poz"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
